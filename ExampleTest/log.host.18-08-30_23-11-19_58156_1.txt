@@ -1,0 +1,415 @@
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:19.684, 526628405905, testhost.x86.exe, DefaultEngineInvoker: Using Application Configuration: '<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <runtime>
+    <legacyUnhandledExceptionPolicy enabled="1"/>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <probing privatePath="Extensions" />
+      <!-- Test adapters compiled against version 11-14, need to be redirected to version 15. -->
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.TestPlatform.ObjectModel" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="11.0.0.0-14.0.0.0" newVersion="15.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.TestWindow.Interfaces" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="11.0.0.0-14.0.0.0"  newVersion="15.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.UnitTestFramework" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.1.0.0" newVersion="10.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Resource" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
+        <bindingRedirect oldVersion="10.0.0.0-14.0.0.0" newVersion="15.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.ControllerObject" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
+        <bindingRedirect oldVersion="10.0.0.0-14.0.0.0" newVersion="15.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.ExecutionCommon" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
+        <bindingRedirect oldVersion="10.0.0.0-14.0.0.0" newVersion="15.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Common" publicKeyToken="b03f5f7f11d50a3a" culture="neutral"/>
+        <bindingRedirect oldVersion="10.0.0.0-14.0.0.0" newVersion="15.0.0.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-14.0.0.0" newVersion="15.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.diagnostics>
+    <switches>
+      <add name="TpTraceLevel" value="0" />
+    </switches>
+  </system.diagnostics>
+  <appSettings>
+    <!--<add key="ExecutionThreadApartmentState" value ="MTA"/>-->
+    <!--<add key="TraceLogMaxFileSizeInKb" value ="10240"/>-->
+    <!-- MsTest Adapter Specific AppSettings -->
+    
+    <!-- This flag is added to support test execution for net35 tests through TMI adapter. -->
+    <add key="TestProjectRetargetTo35Allowed" value="true" />
+  </appSettings>
+</configuration>
+'
+TpTrace Verbose: 0 : 4284, 1, 2018/08/30, 23:11:19.698, 526628441182, testhost.x86.exe, TestRequestHanlder is acting as client
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:19.706, 526628464470, testhost.x86.exe, DefaultEngineInvoker: Monitoring parent process with id: '5076'
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:19.710, 526628473684, testhost.x86.exe, DefaultEngineInvoker: Initialize communication on endpoint address: '127.0.0.1:060134'
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:19.711, 526628477724, testhost.x86.exe, SocketClient.Start: connecting to server endpoint: 127.0.0.1:060134
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:19.714, 526628484621, testhost.x86.exe, DefaultEngineInvoker: Start Request Processing.
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:19.724, 526628514171, testhost.x86.exe, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:060134
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.725, 526628518133, testhost.x86.exe, Connected to server, and starting MessageLoopAsync
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.727, 526628522708, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.786, 526628689704, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:19.805, 526628743043, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 2
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.814, 526628769867, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: D:\\test\\Test.TargetFramework\\ExampleTest\\log.host.18-08-30_23-11-19_58156_1.txt"}}
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.815, 526628771248, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.825, 526628798716, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:19.825, 526628800029, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "D:\\test\\Test.TargetFramework\\ExampleTest\\bin\\Debug\\net471\\xunit.runner.visualstudio.testadapter.dll",
+  "C:\\Program Files\\dotnet\\sdk\\2.1.301\\Extensions\\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll",
+  "C:\\Program Files\\dotnet\\sdk\\2.1.301\\Extensions\\Microsoft.TestPlatform.Extensions.EventLogCollector.dll",
+  "C:\\Program Files\\dotnet\\sdk\\2.1.301\\Extensions\\Microsoft.TestPlatform.TestHostRuntimeProvider.dll",
+  "C:\\Program Files\\dotnet\\sdk\\2.1.301\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll"
+]
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:19.825, 526628800296, testhost.x86.exe, Execution Session Initialize.
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.826, 526628803953, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.836, 526628831186, testhost.x86.exe, TestExecutorService: Loading the extensions
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.838, 526628837216, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:19.838, 526628837919, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithSources) -> {
+  "AdapterSourceMap": {
+    "_none_": [
+      "D:\\test\\Test.TargetFramework\\ExampleTest\\bin\\Debug\\net471\\ExampleTest.dll"
+    ]
+  },
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>D:\\test\\Test.TargetFramework\\ExampleTest\\TestResults</ResultsDirectory>\r\n    <TargetPlatform>X86</TargetPlatform>\r\n    <TargetFrameworkVersion>.NETFramework,Version=v4.7.1</TargetFrameworkVersion>\r\n    <TestAdaptersPaths>D:\\test\\Test.TargetFramework\\ExampleTest\\bin\\Debug\\net471</TestAdaptersPaths>\r\n    <DesignMode>False</DesignMode>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n  </RunConfiguration>\r\n  <LoggerRunSettings>\r\n    <Loggers>\r\n      <Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\2.1.301\\vstest.console.dll\" enabled=\"True\" />\r\n    </Loggers>\r\n  </LoggerRunSettings>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:19.838, 526628838130, testhost.x86.exe, Execution started.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.841, 526628846566, testhost.x86.exe, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.846, 526628859948, testhost.x86.exe, AssemblyResolver: xunit.runner.visualstudio.testadapter: Resolving assembly.
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:19.847, 526628862768, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.856, 526628888801, testhost.x86.exe, AssemblyResolver: xunit.runner.visualstudio.testadapter: Resolved assembly. 
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.865, 526628915747, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.871, 526628931345, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.BlameDataCollector: Failed to load assembly. Reason:System.BadImageFormatException: Could not load file or assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.871, 526628931899, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.BlameDataCollector: Failed to load assembly.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.872, 526628933423, testhost.x86.exe, CurrentDomain_AssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.872, 526628933917, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.872, 526628934079, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolved from cache.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.872, 526628934239, testhost.x86.exe, CurrentDomain_AssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.872, 526628934462, testhost.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.872, 526628934941, testhost.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector'.
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.874, 526628939185, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector' ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.874, 526628940793, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.877, 526628948106, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolved assembly. 
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.878, 526628950609, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.882, 526628962614, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Failed to load assembly. Reason:System.BadImageFormatException: Could not load file or assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.882, 526628963322, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Failed to load assembly.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.882, 526628963782, testhost.x86.exe, CurrentDomain_AssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.883, 526628964535, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.883, 526628964698, testhost.x86.exe, AssemblyResolver: Microsoft.TestPlatform.TestHostRuntimeProvider: Resolved from cache.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.883, 526628964834, testhost.x86.exe, CurrentDomain_AssemblyResolve: Resolving assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.883, 526628965003, testhost.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.883, 526628965622, testhost.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider'.
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.883, 526628966615, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider' ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.885, 526628969452, testhost.x86.exe, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.888, 526628981288, testhost.x86.exe, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Failed to load assembly. Reason:System.BadImageFormatException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadFrom(String assemblyFile, Evidence securityEvidence, Byte[] hashValue, AssemblyHashAlgorithm hashAlgorithm, Boolean forIntrospection, Boolean suppressSecurityChecks, StackCrawlMark& stackMark)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyLoadContext.LoadAssemblyFromPath(String assemblyPath)
+   at Microsoft.VisualStudio.TestPlatform.Common.Utilities.AssemblyResolver.OnResolve(Object sender, AssemblyResolveEventArgs args)
+
+ 
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.889, 526628982803, testhost.x86.exe, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Failed to load assembly.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.889, 526628983881, testhost.x86.exe, CurrentDomain_AssemblyResolve: Resolving assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.890, 526628985204, testhost.x86.exe, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.890, 526628985492, testhost.x86.exe, AssemblyResolver: Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger: Resolved from cache.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.890, 526628985737, testhost.x86.exe, CurrentDomain_AssemblyResolve: Resolving assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.890, 526628985923, testhost.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.890, 526628986394, testhost.x86.exe, CurrentDomainAssemblyResolve: Failed to resolve assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'.
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.890, 526628987475, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger' ---> System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginCache.CurrentDomainAssemblyResolve(Object sender, AssemblyResolveEventArgs args)
+   at Microsoft.VisualStudio.TestPlatform.PlatformAbstractions.PlatformAssemblyResolver.AssemblyResolverEvent(Object sender, Object eventArgs)
+   at System.AppDomain.OnAssemblyResolveEvent(RuntimeAssembly assembly, String assemblyFullName)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.895, 526629000934, testhost.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.897, 526629004897, testhost.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.897, 526629005297, testhost.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.897, 526629005427, testhost.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.897, 526629005603, testhost.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.931, 526629102447, testhost.x86.exe, AssemblyResolver: xunit.runner.visualstudio.testadapter, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.932, 526629104186, testhost.x86.exe, AssemblyResolver: xunit.runner.visualstudio.testadapter, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved assembly. 
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.932, 526629106132, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Xunit.Runner.VisualStudio.VsTestRunner
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.932, 526629106569, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Xunit.Runner.VisualStudio.VsTestRunner
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.932, 526629106740, testhost.x86.exe, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.934, 526629111409, testhost.x86.exe, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.935, 526629112993, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.935, 526629113670, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.935, 526629114346, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.935, 526629114651, testhost.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.935, 526629114804, testhost.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.936, 526629115210, testhost.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.936, 526629115415, testhost.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.936, 526629115533, testhost.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.937, 526629118223, testhost.x86.exe, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.937, 526629118416, testhost.x86.exe, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:19.957, 526629175932, testhost.x86.exe, TestDiscoveryManager: Discovering tests from sources D:\test\Test.TargetFramework\ExampleTest\bin\Debug\net471\ExampleTest.dll
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.959, 526629180635, testhost.x86.exe, TestPluginCache: Discovering the extensions using extension path.
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629184872, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.Extensions.BlameDataCollector' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.Extensions.BlameDataCollector'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629185837, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.TestPlatform.TestHostRuntimeProvider' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.TestPlatform.TestHostRuntimeProvider'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Warning: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629186364, testhost.x86.exe, TestPluginDiscoverer: Failed to load extensions from file 'C:\Program Files\dotnet\sdk\2.1.301\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll'.  Skipping test extension scan for this file.  Error: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger' or one of its dependencies. The system cannot find the file specified.
+File name: 'Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   at Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.TestPluginDiscoverer.GetTestExtensionsFromFiles[TPluginInfo,TExtension](String[] files, Dictionary`2 pluginInfos)
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629186642, testhost.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629186804, testhost.x86.exe, TestPluginCache: Discoverers are 'Xunit.Runner.VisualStudio.VsTestRunner, xunit.runner.visualstudio.testadapter, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629186925, testhost.x86.exe, TestPluginCache: Executors are 'executor://xunit/VsTestRunner2/net'.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629187036, testhost.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.961, 526629187153, testhost.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.965, 526629198191, testhost.x86.exe, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://xunit/VsTestRunner2/net
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:19.966, 526629199809, testhost.x86.exe, BaseRunTests.TryToRunInSTAThread: Using STA thread to call adapter API.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:19.973, 526629222232, testhost.x86.exe, [xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.0 (32-bit Desktop .NET 4.0.30319.42000)
+TpTrace Verbose: 0 : 4284, 11, 2018/08/30, 23:11:19.973, 526629222588, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.0 (32-bit Desktop .NET 4.0.30319.42000)"}}
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.020, 526629352908, testhost.x86.exe, AssemblyResolver: xunit.runner.utility.net452, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.021, 526629355917, testhost.x86.exe, AssemblyResolver: xunit.runner.utility.net452, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved assembly. 
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.021, 526629356795, testhost.x86.exe, AssemblyResolver: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.022, 526629358862, testhost.x86.exe, AssemblyResolver: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved assembly. 
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.298, 526630141475, testhost.x86.exe, [xUnit.net 00:00:00.32]   Discovering: ExampleTest
+TpTrace Verbose: 0 : 4284, 11, 2018/08/30, 23:11:20.299, 526630142407, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.32]   Discovering: ExampleTest"}}
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.428, 526630509026, testhost.x86.exe, [xUnit.net 00:00:00.45]   Discovered:  ExampleTest
+TpTrace Verbose: 0 : 4284, 11, 2018/08/30, 23:11:20.428, 526630509491, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.45]   Discovered:  ExampleTest"}}
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.433, 526630525336, testhost.x86.exe, [xUnit.net 00:00:00.46]   Starting:    ExampleTest
+TpTrace Verbose: 0 : 4284, 11, 2018/08/30, 23:11:20.433, 526630525740, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:00.46]   Starting:    ExampleTest"}}
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.438, 526630539911, testhost.x86.exe, AssemblyResolver: xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.439, 526630543176, testhost.x86.exe, AssemblyResolver: xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved assembly. 
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.439, 526630543671, testhost.x86.exe, AssemblyResolver: xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.439, 526630543877, testhost.x86.exe, AssemblyResolver: xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved from cache.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.440, 526630544933, testhost.x86.exe, AssemblyResolver: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.440, 526630545178, testhost.x86.exe, AssemblyResolver: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved from cache.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.440, 526630546138, testhost.x86.exe, AssemblyResolver: xunit.core, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.441, 526630548846, testhost.x86.exe, AssemblyResolver: xunit.core, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved assembly. 
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.443, 526630555084, testhost.x86.exe, AssemblyResolver: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolving assembly.
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:20.444, 526630555732, testhost.x86.exe, AssemblyResolver: xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c: Resolved from cache.
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:20.847, 526631700313, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Error: 0 : 4284, 14, 2018/08/30, 23:11:21.352, 526633131761, testhost.x86.exe, [xUnit.net 00:00:01.38]     ExampleTest.UnitTest1.Test1 [FAIL]
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.352, 526633132129, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":2,"Message":"[xUnit.net 00:00:01.38]     ExampleTest.UnitTest1.Test1 [FAIL]"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.354, 526633135648, testhost.x86.exe, [xUnit.net 00:00:01.38]       System.AggregateException : One or more errors occurred.
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.354, 526633135880, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]       System.AggregateException : One or more errors occurred."}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.354, 526633136712, testhost.x86.exe, [xUnit.net 00:00:01.38]       ---- System.Net.Http.HttpRequestException : An error occurred while sending the request.
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.354, 526633136901, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]       ---- System.Net.Http.HttpRequestException : An error occurred while sending the request."}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.355, 526633137754, testhost.x86.exe, [xUnit.net 00:00:01.38]       -------- System.Net.WebException : The request was aborted: Could not create SSL/TLS secure channel.
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.355, 526633137985, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]       -------- System.Net.WebException : The request was aborted: Could not create SSL/TLS secure channel."}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.355, 526633140248, testhost.x86.exe, [xUnit.net 00:00:01.38]       Stack Trace:
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.355, 526633140454, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]       Stack Trace:"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.357, 526633143052, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.357, 526633143265, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.357, 526633144116, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.357, 526633144308, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.357, 526633145045, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Threading.Tasks.Task`1.get_Result()
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.357, 526633145223, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Threading.Tasks.Task`1.get_Result()"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.358, 526633146042, testhost.x86.exe, [xUnit.net 00:00:01.38]            at ExampleTest.UnitTest1.Test1()
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.358, 526633146225, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at ExampleTest.UnitTest1.Test1()"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.358, 526633147018, testhost.x86.exe, [xUnit.net 00:00:01.38]         ----- Inner Stack Trace -----
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.358, 526633147195, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]         ----- Inner Stack Trace -----"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.358, 526633147894, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.358, 526633148075, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.359, 526633148883, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.359, 526633149160, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.359, 526633149957, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.359, 526633150133, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.359, 526633150842, testhost.x86.exe, [xUnit.net 00:00:01.38]         ----- Inner Stack Trace -----
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.359, 526633151020, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]         ----- Inner Stack Trace -----"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.360, 526633151830, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.360, 526633152050, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)"}}
+TpTrace Information: 0 : 4284, 14, 2018/08/30, 23:11:21.360, 526633152766, testhost.x86.exe, [xUnit.net 00:00:01.38]            at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+TpTrace Verbose: 0 : 4284, 14, 2018/08/30, 23:11:21.360, 526633152944, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.38]            at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)"}}
+TpTrace Warning: 0 : 4284, 14, 2018/08/30, 23:11:21.369, 526633178537, testhost.x86.exe, InProgressTests is null
+TpTrace Information: 0 : 4284, 11, 2018/08/30, 23:11:21.372, 526633187118, testhost.x86.exe, [xUnit.net 00:00:01.40]   Finished:    ExampleTest
+TpTrace Verbose: 0 : 4284, 11, 2018/08/30, 23:11:21.372, 526633187613, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"[xUnit.net 00:00:01.40]   Finished:    ExampleTest"}}
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:21.449, 526633406000, testhost.x86.exe, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://xunit/VsTestRunner2/net
+TpTrace Information: 0 : 4284, 9, 2018/08/30, 23:11:21.455, 526633422562, testhost.x86.exe, Sending test run statistics
+TpTrace Verbose: 0 : 4284, 9, 2018/08/30, 23:11:21.477, 526633489058, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"679394e2-fc12-b060-b66c-e76704ad4681","FullyQualifiedName":"ExampleTest.UnitTest1.Test1","DisplayName":"ExampleTest.UnitTest1.Test1","ExecutorUri":"executor://xunit/VsTestRunner2/net","Source":"D:\\test\\Test.TargetFramework\\ExampleTest\\bin\\Debug\\net471\\ExampleTest.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":2,"ErrorMessage":"System.AggregateException : One or more errors occurred.\r\n---- System.Net.Http.HttpRequestException : An error occurred while sending the request.\r\n-------- System.Net.WebException : The request was aborted: Could not create SSL/TLS secure channel.","ErrorStackTrace":"   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)\r\n   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)\r\n   at System.Threading.Tasks.Task`1.get_Result()\r\n   at ExampleTest.UnitTest1.Test1()\r\n----- Inner Stack Trace -----\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()\r\n----- Inner Stack Trace -----\r\n   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)\r\n   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)","DisplayName":"ExampleTest.UnitTest1.Test1","Messages":[],"ComputerName":"WIN-3LQDHKAI79L","Duration":"00:00:00.7380000","StartTime":"2018-08-30T23:11:21.363308+02:00","EndTime":"2018-08-30T23:11:21.363308+02:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Failed":1}},"ActiveTests":[]}}
+TpTrace Verbose: 0 : 4284, 9, 2018/08/30, 23:11:21.479, 526633490055, testhost.x86.exe, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Information: 0 : 4284, 3, 2018/08/30, 23:11:21.480, 526633492242, testhost.x86.exe, Sending test run complete
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:21.487, 526633516546, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Failed":1}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:01.4865330","Metrics":{}},"LastRunTests":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Failed":1}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://xunit/VsTestRunner2/net"]}}
+TpTrace Verbose: 0 : 4284, 3, 2018/08/30, 23:11:21.489, 526633517679, testhost.x86.exe, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:21.514, 526633590997, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:60134 localEndPoint: 127.0.0.1:60135
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:21.515, 526633591575, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:21.515, 526633591731, testhost.x86.exe, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:21.515, 526633593636, testhost.x86.exe, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:060134
+TpTrace Information: 0 : 4284, 8, 2018/08/30, 23:11:21.515, 526633593823, testhost.x86.exe, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:21.515, 526633593992, testhost.x86.exe, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:060134
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:21.515, 526633594207, testhost.x86.exe, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 4284, 1, 2018/08/30, 23:11:21.515, 526633594351, testhost.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 4284, 1, 2018/08/30, 23:11:21.515, 526633594700, testhost.x86.exe, Testhost process exiting.
+TpTrace Verbose: 0 : 4284, 8, 2018/08/30, 23:11:21.515, 526633594221, testhost.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
